@@ -1,0 +1,28 @@
+{
+  "name": "webhook_pix",
+  "version": "1.0.0",
+  "description": "callback pix",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/m4rc0nd35/WEBHOOK_PIX.git"
+  },
+  "author": "M4rc0nd35",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m4rc0nd35/WEBHOOK_PIX/issues"
+  },
+  "homepage": "https://github.com/m4rc0nd35/WEBHOOK_PIX#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
