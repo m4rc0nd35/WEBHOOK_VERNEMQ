@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const on_client_wakeup = require('./on_client_wakeup');
 const on_publish = require('./on_publish');
 const on_client_gone = require('./on_client_gone');
+const on_test = require('./on_test');
 
 app.use('/static', express.static('uploads'));
 app.use(bodyParser.urlencoded({extended: false}));
@@ -20,6 +21,7 @@ app.use((req, res, next) =>{
 app.use("/webhook/on_client_wakeup", on_client_wakeup);
 app.use("/webhook/on_publish", on_publish);
 app.use("/webhook/on_client_gone", on_client_gone);
+app.use("/webhook/on_test", on_test);
 
 app.use((req, res, next) =>{
     const erro = new Error("Pagina não encontrada");
